@@ -1,0 +1,4 @@
+- [ ] local model!!!!
+  - [ ] LLM studio
+- [ ] Copy midjourney? poggers?
+  - [ ] Hook to Discord

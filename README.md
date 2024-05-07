@@ -1,7 +1,35 @@
-# GPT Video Game Searcher
+# GPT Video Game Recommender
 
 ## Overview
-The primary objective of this project is to create a chatbot that interfaces with features from a Steam-like website seamlessly, all while conversing with the user. This proof-of-concept showcases a chatbot designed to recommend new video games to the user. This has been achieved by utilizing 2 GPT models and the RAWG API (a comprehensive video game database with a RESTful API).
+The primary objective of this project is to create a discord chatbot that interfaces with an online video game search engine API to recommend the player some video games. This has been achieved by utilizing 2 GPT models and the RAWG API (a comprehensive video game database with a RESTful API). The user has the ability to chat with the bot by running `main.py`. This has been packaged into a discord chatbot for a better user experience.
+
+## Bot Usage
+
+### Prerequisites
+
+Before running the bot, ensure you have Python 3.x installed on your system.
+
+### Setup
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Install the required Python dependencies by running.
+4. Create an .env file inside of the project directory with the following
+    - OPEN_AI_KEY: API key from openAI
+    - RAWG_API_KEY: API key from RAWG
+    - DISCORD_TOKEN: token for a discord chat bot.
+
+### Running the Bot
+
+1. Execute the following command in your terminal:
+    - ```python bot.py```
+2. Your bot should now be online and ready to respond to messages in Discord.
+
+### Interacting with the Bot
+
+Once the bot is running, you can send the first message for the bot to reply to! 
+
+**BONUS**: the bot remembers your previous messages!
 
 ## Chatter
 - **GPT-3.5 Model**
@@ -27,12 +55,11 @@ The primary objective of this project is to create a chatbot that interfaces wit
 - Query parameters for genres and tags are utilized.
 
 ## Lessons Learned
-- Basics of using a chatbot to do API queries.
-- Basics of creating a structured data chatbot with ways to export data in a JSON-like manner.
+- How to use the OpenAI gpt api.
+- How to create a gpt chatbot that uses structured data.
+- How to create a discord chat-bot.
 
-## Future Plans
-- Implement a full web interface for users to chat with online.
-- Enhance the Searcher API to be a comprehensive RAWG API chatbot, utilizing more API calls such as [https://api.rawg.io/api/games/{id}](https://api.rawg.io/api/games/{id}) to show details of a game and have better interactions with the API.
+## Problems
+- There were times when the bot wouldn't use the structured data that it was assigned.
+  - Interestingly enough, this problem would reoccur more often when using GPT4, so I settled on using GPT 3.5
 
-## Thank You
-Thank you for your interest in this project!

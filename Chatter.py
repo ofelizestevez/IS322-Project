@@ -25,6 +25,10 @@ class Chatter:
         
         SEARCH_PROMPT = """
         Your goal is to chat with the user about video games so you can query for games to recommend to them.
+        Remember to keep your conversation focused on you wanting to recommend the player a game.
+        Also remember to use searchquery when necessary, as this is connected to an API.
+        When you use the searchquery, a list of games will be showcased to the user.
+        The chat history provided will only contain the user messages, not your messages, so you will know what the user has said but not your replies.
         
         {format_instruction}
         
